@@ -11,6 +11,10 @@ GameObject:
   - component: {fileID: 3376539721835403284}
   - component: {fileID: 4810163862326608338}
   - component: {fileID: 1554605397421013137}
+  - component: {fileID: 3325686188060952933}
+  - component: {fileID: 1085965275476464889}
+  - component: {fileID: 6261575660345925009}
+  - component: {fileID: 6257246251506821807}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Untagged
@@ -97,5 +101,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e45f508ee75d2c42bd6001206ca5637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: -6332437288468472740, guid: 70d25577278210545b6d5f7c866d6958, type: 3}
+  botaoAtaque: Fire1
+--- !u!114 &3325686188060952933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8903359698285859709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab71743dcd837d048861c2267b029742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nome: Canhao
+  dano: 1
+  descricao: 
+  balaPrefab: {fileID: 2944244481666441881, guid: 70d25577278210545b6d5f7c866d6958, type: 3}
+--- !u!114 &1085965275476464889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8903359698285859709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41ed6271e93de6549be73fff22acae27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   speed: 5
+--- !u!114 &6261575660345925009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8903359698285859709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58abc6cfa99674646be16639845937e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+--- !u!114 &6257246251506821807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8903359698285859709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d513a2b2d9f12c642a8c1e71b1beecad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -223,6 +223,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3325686188060952933, guid: e05ee959f2037d14c83913a300b85e18, type: 3}
+      propertyPath: "capacidadeMuni\xE7\xE3o"
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3376539721835403284, guid: e05ee959f2037d14c83913a300b85e18, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
