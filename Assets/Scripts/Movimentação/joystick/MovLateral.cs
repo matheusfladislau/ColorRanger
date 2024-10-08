@@ -5,6 +5,6 @@ public class MovLateral : MonoBehaviour {
 
     void Update() {
         float horizontal = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * horizontal * speed * Time.deltaTime);
+        transform.Translate(new Vector3(horizontal, 0) * speed * Time.deltaTime);
     }
 }

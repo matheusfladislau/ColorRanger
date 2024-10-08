@@ -5,6 +5,6 @@ public class MovVertical : MonoBehaviour {
 
     void Update() {
         float vertical = Input.GetAxis("Vertical");
-        transform.Translate(Vector3.up * vertical * speed * Time.deltaTime);
+        transform.Translate(new Vector3(0, vertical) * speed * Time.deltaTime);
     }
 }
