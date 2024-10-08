@@ -8,7 +8,9 @@ public class Burst : Arma {
     private int municaoAtual;
     public float tempoRecarga = 2f;
     public float intervaloRajada = 0.1f;
+    public float intervaloCooldown = 2f;
     private bool estaRecarregando = false;
+    private bool cooldownAtivo = false;
 
     void Start() {
         municaoAtual = capacidadeMunição;
@@ -17,6 +19,10 @@ public class Burst : Arma {
     public override void Atacar() {
         if (estaRecarregando) {
             Debug.Log("Recarregando... Aguarde");
+            return;
+        }
+        if (cooldownAtivo) {
+            Debug.Log("Cooldown... Aguarde");
             return;
         }
 
@@ -39,6 +45,7 @@ public class Burst : Arma {
                 yield return new WaitForSeconds(intervaloRajada);
             }
         }
+        Cooldown();
     }
 
     private IEnumerator Recarregar() {
@@ -48,5 +55,13 @@ public class Burst : Arma {
         municaoAtual = capacidadeMunição;
         estaRecarregando = false;
         Debug.Log("Recarga completa!");
+    }
+
+    private IEnumerator Cooldown() {
+        cooldownAtivo = true;
+        Debug.Log("Ativando cooldown da rajada...");
+        yield return new WaitForSeconds(intervaloCooldown);
+        cooldownAtivo = false;
+        Debug.Log("Rajada pronta!");
     }
 }
