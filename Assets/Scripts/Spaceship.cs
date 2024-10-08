@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class Spaceship : MonoBehaviour {
     public string botaoAtaque = "Fire1";
-    private canhao _cannon;
+    private Arma _armaAtual;
 
     void Start() {
-        _cannon = GetComponentInChildren<canhao>();
+        _armaAtual = GetComponentInChildren<Arma>();
     }
 
     void Update() {
-        if (Input.GetButtonDown(botaoAtaque) && _cannon != null) _cannon.Atacar();
+        if (Input.GetButtonDown(botaoAtaque) && _armaAtual != null) _armaAtual.Atacar();
     }
 }
