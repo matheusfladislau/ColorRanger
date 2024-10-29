@@ -97,8 +97,7 @@ GameObject:
   - component: {fileID: 1554605397421013137}
   - component: {fileID: 6257246251506821807}
   - component: {fileID: 8328479844869544604}
-  - component: {fileID: 4211179711072525124}
-  - component: {fileID: 9020600734187572816}
+  - component: {fileID: 8441300676996688846}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Untagged
@@ -211,8 +210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41ed6271e93de6549be73fff22acae27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
---- !u!114 &4211179711072525124
+  speed: 8
+--- !u!114 &8441300676996688846
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -221,27 +220,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8903359698285859709}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58abc6cfa99674646be16639845937e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
---- !u!114 &9020600734187572816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8903359698285859709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee53e84a0ab32cf45b6d8b547361344d, type: 3}
+  m_Script: {fileID: 11500000, guid: ab71743dcd837d048861c2267b029742, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nome: 
-  dano: 
+  dano: 1
   descricao: 
   balaPrefab: {fileID: 2944244481666441881, guid: 70d25577278210545b6d5f7c866d6958, type: 3}
-  "capacidadeMuni\xE7\xE3o": 9
-  intervaloRajada: 0.1
-  tempoRecarga: 2
-  cooldownRajada: 0.5
+  "capacidadeMuni\xE7\xE3o": 25
+  tempoRecarga: 1
