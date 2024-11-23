@@ -98,8 +98,9 @@ GameObject:
   - component: {fileID: 6257246251506821807}
   - component: {fileID: 8328479844869544604}
   - component: {fileID: 8441300676996688846}
+  - component: {fileID: 3314071520554154347}
   m_Layer: 0
-  m_Name: Spaceship
+  m_Name: SpaceshipBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -163,7 +164,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300006, guid: 8aeb9e233fbb8f14db39770841b78b94, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.21176472, g: 0.73333335, b: 0.9607844, a: 1}
   m_FlipX: 0
   m_FlipY: 1
   m_DrawMode: 0
@@ -229,3 +230,20 @@ MonoBehaviour:
   balaPrefab: {fileID: 2944244481666441881, guid: 70d25577278210545b6d5f7c866d6958, type: 3}
   "capacidadeMuni\xE7\xE3o": 25
   tempoRecarga: 1
+--- !u!114 &3314071520554154347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8903359698285859709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8fef1e95cf19a94d92e1d0bbb7a36f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redShipPrefab: {fileID: 8903359698285859709, guid: e05ee959f2037d14c83913a300b85e18, type: 3}
+  greenShipPrefab: {fileID: 8903359698285859709, guid: 29f206de2fface648b26b71c9c9a1382, type: 3}
+  blueShipPrefab: {fileID: 8903359698285859709}
+  botaoTrocar: Space
+  _currentShip: {fileID: 8903359698285859709}
