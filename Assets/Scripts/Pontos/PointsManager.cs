@@ -39,14 +39,12 @@ public class PointsManager : MonoBehaviour
     }
 
     public void AddPoints(int points, string enemyType) {
-        // Verifica combo
         if (enemyType == lastEnemyType) {
             comboCount++;
             if (comboCount >= comboRequirement) {
-                // Adiciona bonus e reseta o combo
                 totalPoints += points + comboBonus;
                 Debug.Log($"COMBO! Bônus de {comboBonus} pontos!");
-                StartCoroutine(AnimateScoreChange(true)); // true para indicar que é um combo
+                StartCoroutine(AnimateScoreChange(true));
                 comboCount = 0;
             }
             else {
@@ -55,7 +53,6 @@ public class PointsManager : MonoBehaviour
             }
         }
         else {
-            // Reseta o combo se for um inimigo diferente
             comboCount = 1;
             totalPoints += points;
             StartCoroutine(AnimateScoreChange(false));
@@ -69,7 +66,6 @@ public class PointsManager : MonoBehaviour
         if (scoreText != null) {
             scoreText.text = "Pontos: " + totalPoints.ToString();
 
-            // Opcional: mostrar progresso do combo
             if (comboCount > 0) {
                 scoreText.text += $"\nCombo: {comboCount}/{comboRequirement}";
             }
@@ -78,11 +74,9 @@ public class PointsManager : MonoBehaviour
 
     private IEnumerator AnimateScoreChange(bool isCombo) {
         if (scoreText != null) {
-            // Escolhe a cor baseada se é combo ou não
             Color targetColor = isCombo ? comboColor : highlightColor;
             scoreText.color = targetColor;
 
-            // Aumenta mais se for combo
             float scale = isCombo ? 1.4f : 1.2f;
             scoreText.transform.localScale = Vector3.one * scale;
 

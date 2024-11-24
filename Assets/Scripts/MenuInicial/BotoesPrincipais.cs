@@ -18,6 +18,9 @@ public class MenuInicial : MonoBehaviour
     }
 
     public void Jogar() {
+        if (HealthManager.Instance != null) {
+            HealthManager.Instance.ResetHealth();
+        }
         SceneManager.LoadScene("Jogo");
     }
 

@@ -180,7 +180,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512782934554904}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2807bc106be9ecc4aabe5208a30a9292, type: 3}
   m_Name: 
@@ -201,5 +201,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 6887366361721211180, guid: ab26b5a1adaf7c44991c2cc1c64e1da1, type: 3}
+  projectilePrefab: {fileID: 1019480068096796, guid: 6b1a2db7f9ca49342ac01f8958e83982, type: 3}
   pointValue: 5
   enemyType: green
+  minFireRate: 1
+  maxFireRate: 3

@@ -6,7 +6,6 @@ public class Spaceship : MonoBehaviour {
     public string botaoTrocar = "Space";
     private Arma _armaAtual;
     private CorMudanca _color;
-    private int _currentNumber = 0;
 
 
     void Start() {
