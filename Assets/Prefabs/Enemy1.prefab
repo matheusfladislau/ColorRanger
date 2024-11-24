@@ -102,6 +102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 6887366361721211180, guid: ab26b5a1adaf7c44991c2cc1c64e1da1, type: 3}
+  pointValue: 5
+  enemyType: blue
 --- !u!61 &6826526608842107584
 BoxCollider2D:
   m_ObjectHideFlags: 0
