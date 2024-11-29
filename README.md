@@ -3,7 +3,9 @@
 Seu objetivo é alternar entre três cores e destruir naves com as cores iguais as suas! Haverão ondas e você precisa eliminar todas as naves presentes na tela para prosseguir.
 
 ### Controles
-W A S D -> Movimento da nave;
+A -> Movimento pra esquerda;
+<br/>
+D -> Movimento pra direita;
 <br/>
 Botão esquerdo do mouse -> Atirar;
 <br/>
